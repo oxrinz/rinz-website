@@ -24,7 +24,7 @@ export default function Home() {
         </p>
         <p>
           <br />
-          i'll post more on here soon, once i find some freedom
+          {"i'll post more on here soon, once i find some freedom"}
         </p>
         <div className="flex flex-row gap-4">
 
