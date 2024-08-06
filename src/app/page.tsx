@@ -8,7 +8,7 @@ export default function Home() {
         life started at 16
       </p>
       <p>
-        i excel
+        i excel zz
       </p>
     </main>
   );
