@@ -43,7 +43,7 @@ export default function Employers() {
             </p> 
             <video controls muted className="rounded-lg" width="100%" height="auto" src="employers/shopify-theme-1.mp4" />
             <video controls muted className="rounded-lg" width="100%" height="auto" src="employers/shopify-theme-2.mp4" />
-            <h1>
+            <h1> 
                 concept beat store
             </h1>
             <p>
