@@ -33,9 +33,17 @@ body {
 }
 
 h1 {
-  @apply text-4xl font-bold text-center text-balance;
+  @apply text-4xl font-bold text-balance;
+}
+
+h2 {
+  @apply text-3xl  text-balance;
 }
 
 p {
   @apply text-xl ;
+}
+
+a{
+  @apply text-blue-500 underline;
 }
