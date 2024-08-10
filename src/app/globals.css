@@ -40,10 +40,15 @@ h2 {
   @apply text-3xl  text-balance;
 }
 
+h3 {
+  @apply text-2xl  text-balance;
+}
+
+
 p {
   @apply text-xl ;
 }
 
 a{
-  @apply text-blue-500 underline;
+  @apply text-blue-400 underline;
 }

@@ -17,9 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <main className="flex flex-row justify-between p-6 lg:p-24 ">
-          <div className="flex flex-col gap-12">
           {children}
-          </div>
         </main></body>
     </html>
   );
