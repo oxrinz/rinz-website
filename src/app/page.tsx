@@ -42,6 +42,15 @@ export default async function Home() {
             Analyzes your discord account and gives you a detailed aura report based on your profile
             <br />
             Then puts you on a leaderboard to compete with other users
+            <br />
+            Made in 2 days
+          </p>
+          <p>
+            <Link href="https://www.vnvault.com/">
+              {"VNVault"}
+            </Link>
+            <br />
+            Website with visual novel related minigames. Also works as a vndb wrapper
           </p>
         </div>
         <div>

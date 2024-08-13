@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 const poppins = Cormorant({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function RootLayout({
         <main className="flex flex-row justify-between p-6 lg:p-24 ">
           {children}
         </main>
-        </body>
+      </body>
     </html>
   );
 }
