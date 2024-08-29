@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black text-white;
+  @apply bg-black text-white m-0 p-0
 } 
 
 @layer utilities {
@@ -26,7 +26,7 @@ h3 {
 
 
 p {
-  @apply text-xl ;
+  @apply text-xl text-neutral-300;
 }
 
 a{

@@ -21,8 +21,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={poppins.className}>
-        <main className="flex flex-row justify-between p-6 lg:p-24 ">
-          {children}
+        <main className="flex flex-row justify-center px-6 lg:px-24 ">
+          <div className="border-x-[1px] border-neutral-800 p-6 ">
+            <div className="flex flex-row gap-12 max-w-[600px] w-full">
+              {children}
+            </div>
+          </div>
         </main>
       </body>
     </html>
