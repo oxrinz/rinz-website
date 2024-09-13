@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Cormorant } from "next/font/google";
+import { Cormorant, Fira_Code, IBM_Plex_Mono, JetBrains_Mono, Macondo_Swash_Caps } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
-const poppins = Cormorant({ subsets: ["latin"], weight: "400" });
+const poppins = IBM_Plex_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "rinz.online",
@@ -22,8 +22,8 @@ export default function RootLayout({
       </head>
       <body className={poppins.className}>
         <main className="flex flex-row justify-center px-6 lg:px-24 ">
-          <div className="border-x-[1px] border-neutral-800 p-6 ">
-            <div className="flex flex-row gap-12 max-w-[600px] w-full">
+          <div className="border-x-[0px] max-w-[700px] w-full border-rose-900/25 p-6 ">
+            <div className="flex flex-row gap-12">
               {children}
             </div>
           </div>

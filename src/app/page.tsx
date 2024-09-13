@@ -10,77 +10,90 @@ export default async function Home() {
         <Image className="rounded-full" width="300" height="300" alt="pfp" src="/pfp.jpg" />
         <div className="w-full">
           <h1>
-            rinz.online
+            rinz
           </h1>
           <p className="text-base text-neutral-300">
             Or Robert
           </p>
         </div>
       </div>
-      <div>
+{/*       <div>
         <p>
-          I love technology
+          Software dev. I love technology
         </p>
-      </div>
-      <div className="flex flex-col gap-4">
+      </div> */}
+      <Divider />
+      <div className="flex flex-col gap-6">
         <h1>
           Projects
         </h1>
-        <p>
-          <Link href="https://www.aurawizard.com/">
-            {"AuraWizard"}
-          </Link>
-          <br />
-          Analyzes your discord account and gives you a detailed aura report based on your profile, then puts you on a leaderboard to compete with other users
-          <br />
-          Made in ~9 hours
-          <br />
-          <span className="text-lg">
-            Status: Finished (09-08-2024)
-          </span>
-        </p>
-        <p>
-          <Link href="https://www.vnvault.com/">
-            {"VNVault"}
-          </Link>
-          <br />
-          A vndb "alternative"
-          <br />
-          Works as a great vndb alternative, using the data from vndb with a few extra features and improvements
-          <br />
-          <span className="text-lg">
-            Status: Released & in development
-          </span>
-        </p>
-        <p>
-          <Link href="https://www.doseweb.com/">
-            {"DOSE (co-own)"}
-          </Link>
-          <br />
-          Providing value to primarily young clothing brand owners through custom 3D work and high quality shopify themes
-          <br />
-          Side project and a money vessel
-          <br />
-          I handle the technical stuff such as theme development, maintaining databases, payments, etc.
-          <br />
-          <span className="text-lg">
-            Status: Currently running
-          </span>
-        </p>
-        <p>
-          <Link href="https://www.spireui.com/">
-            {"SpireUI (under early development)"}
-          </Link>
-          <br />
-          Component library of high-end, unique, avant-garde React components
-          <br />
-          Currently in very early stages, public, but needs work in order to be usable
-          <br />
-          <span className="text-lg">
-            Status: Released & in early development
-          </span>
-        </p>
+        <Project
+          title="DOSE (co-own)"
+          description={
+            <>
+              Providing value to primarily young clothing brand owners through custom 3D work and high quality shopify themes
+              <br />
+              Side project and a money vessel
+              <br />
+              I handle the technical stuff such as theme development, maintaining databases, payments, etc.
+            </>
+          }
+          date="03-2021"
+          status="Running"
+          href="https://www.doseweb.com/"
+        />
+        <Project
+          title="SpireUI (dropped)"
+          description={
+            <>
+              Component library of high-end, unique, avant-garde React components
+              <br />
+              Currently in very early stages, public, but needs work in order to be usable
+            </>
+          }
+          date="03-2024"
+          status="Dropped"
+          href="https://www.spireui.com/"
+        />
+        <Project
+          title="AuraWizard"
+          description={
+            <>
+              Analyzes your discord account and gives you a detailed aura report based on your profile, then puts you on a leaderboard to compete with other users
+              <br />
+              Made in ~9 hours
+            </>
+          }
+          date="08-2024"
+          status="Finished"
+          href="https://www.aurawizard.com/"
+        />
+        <Project
+          title="VNVault"
+          description={
+            <>
+              A vndb "alternative"
+              <br />
+              Works as a great vndb alternative, using the data from vndb with a few extra features and improvements
+            </>
+          }
+          date="09-2024"
+          status="In very early alpha & on hold"
+          href="https://www.vnvault.com/"
+        />
+        <Project
+          title="Z-UI"
+          description={
+            <>
+              Actually usable AI tools for UI development in large scale projects
+            </>
+          }
+          date="TBA"
+          status="Under development"
+          href=""
+        />
       </div>
+      <Divider />
       <div className="flex flex-col gap-4">
         <h1>
           Archive
@@ -95,14 +108,23 @@ export default async function Home() {
           </Link>
         </p>
       </div>
-      <div>
+      <Divider />
+      {/*       <div>
         <h1 className="mb-4">
           Writing
         </h1>
         <p>
-          I haven't written anything yet, but I'd like to start, hopefully soon, writing short articles to organize my thoughts
+          I'm very amateur, and I mainly write these for myself. Don't bark if they're bad, cause they most likely are
         </p>
-      </div>
+        <br />
+          <Essay
+          title="Problem with LLMs"
+          description={
+            "Quick look into why generalized LLMs will most likely never be used in large scale projects "
+          }
+            href="problem-with-llm"
+          />
+      </div> */}
       <div>
         <h1>
           Stats:
@@ -125,4 +147,47 @@ export default async function Home() {
       </div>
     </div>
   );
+}
+
+function Divider() {
+  return (
+    <div className="border-rose-900/50 border-b-[1px] w-full" />
+  )
+}
+
+function Essay({ title, description, href }: any) {
+  return (
+    <div className="flex flex-col gap-1">
+      <Link href={"writing/" + href}>
+        {title}
+      </Link>
+      <p>
+        {description}
+      </p>
+    </div>
+  )
+}
+
+function Project({ title, href, status, description, date }: any) {
+  return (
+    <div className="flex flex-col gap-1">
+      <div className="flex flex-row items-center gap-2">
+        <Link href={href}>
+          {title}
+        </Link>
+        <p className="text-sm text-rose-400/50">{"(" + date + ")"}</p>
+      </div>
+      <p>
+        {description}
+      </p>
+      <p className="text-rose-300">
+        <span className="">
+          {"Status: "}
+        </span>
+        <span className="font-bold text-rose-200">
+          {status}
+        </span>
+      </p>
+    </div>
+  )
 }
