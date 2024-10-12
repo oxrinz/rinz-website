@@ -28,34 +28,6 @@ export default async function Home() {
           Projects
         </h1>
         <Project
-          title="DOSE (co-own)"
-          description={
-            <>
-              Providing value to primarily young clothing brand owners through custom 3D work and high quality shopify themes
-              <br />
-              Side project and a money vessel
-              <br />
-              I handle the technical stuff such as theme development, maintaining databases, payments, etc.
-            </>
-          }
-          date="03-2021"
-          status="Running"
-          href="https://www.doseweb.com/"
-        />
-        <Project
-          title="SpireUI (dropped)"
-          description={
-            <>
-              Component library of high-end, unique, avant-garde React components
-              <br />
-              Currently in very early stages, public, but needs work in order to be usable
-            </>
-          }
-          date="03-2024"
-          status="Dropped"
-          href="https://www.spireui.com/"
-        />
-        <Project
           title="AuraWizard"
           description={
             <>
@@ -80,17 +52,6 @@ export default async function Home() {
           date="09-2024"
           status="In very early alpha & on hold"
           href="https://www.vnvault.com/"
-        />
-        <Project
-          title="Z-UI"
-          description={
-            <>
-              Actually usable AI tools for UI development in large scale projects
-            </>
-          }
-          date="TBA"
-          status="Under development"
-          href=""
         />
       </div>
       <Divider />
