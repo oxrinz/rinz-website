@@ -6,6 +6,7 @@ export default function Archive() {
             <Link href="/" className="text-neutral-500  no-underline">
             {"<- Back to front page"}
             </Link>
+            Tragically when I switched to NixOS I lost my old drive, and all of my non backed up projects with it. This page serves as a graveyard and a tribute to those lost projects.
             <div className="flex flex-col gap-4">
                 <h1>
                     Old rinz.online
