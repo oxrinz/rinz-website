@@ -10,7 +10,7 @@ export default async function Home() {
         <Image className="rounded-full" width="200" height="200" alt="pfp" src="/pfp.png" />
         <div className="w-full">
           <h1>
-            oxrinz (or Robert)
+            oxrinz 
           </h1>
           <p className="text-base">
             Software engineer striving to be a programmer
