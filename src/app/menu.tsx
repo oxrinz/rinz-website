@@ -13,6 +13,10 @@ export default function Menu({ font }: any) {
                 <br />
                 ML & Deep learning<br />
                 └── <Link href="https://arxiv.org/pdf/2310.11453" className="text-base">BitNet LLM<br /></Link>
+                <br />
+                Compsci<br />
+                ├── <Link href="https://www.felixcloutier.com/x86/" className="text-base">x86 instruction set<br /></Link>
+                └── <Link href="https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md" className="text-base">Linux syscall table<br /></Link>
             </pre>
         </div>
     )
