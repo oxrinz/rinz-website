@@ -5,7 +5,7 @@ import Image from "next/image";
 const font = IBM_Plex_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "rinz.online",
+  title: "",
   description: "",
   icons: ['/pfp.png']
 };
