@@ -13,7 +13,7 @@ export default async function Home() {
             oxrinz 
           </h1>
           <p className="text-base">
-            Software engineer striving to be a programmer
+            Code poet
           </p>
         </div>
       </div>
