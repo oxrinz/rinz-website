@@ -12,6 +12,7 @@ export default function Menu({ font }: any) {
                 └── <Link href="https://cstack.github.io/db_tutorial/" className="text-base">DB from scratch<br /></Link>
                 <br />
                 ML & Deep learning<br />
+                ├── <Link href="https://arxiv.org/pdf/2209.01188" className="text-base">Petals<br /></Link>
                 └── <Link href="https://arxiv.org/pdf/2310.11453" className="text-base">BitNet LLM<br /></Link>
                 <br />
                 Compsci<br />
