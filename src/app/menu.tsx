@@ -17,6 +17,7 @@ export default function Menu({ font }: any) {
                 <br />
                 Compsci<br />
                 ├── <Link href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63VIBQVWguXxZZi0566y7Wf" className="text-base">mit swe<br /></Link>
+                ├── <Link href="https://www.youtube.com/playlist?list=PLF1Z-APd9zK7usPMx3LGMZEHrECUGodd3" className="text-base">haskell<br /></Link>
                 ├── <Link href="https://www.felixcloutier.com/x86/" className="text-base">x86 instruction set<br /></Link>
                 └── <Link href="https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md" className="text-base">Linux syscall table<br /></Link>
             </pre>
