@@ -16,6 +16,8 @@ export default function Menu({ font }: any) {
                 └── <Link href="https://arxiv.org/pdf/2310.11453" className="text-base">BitNet LLM<br /></Link>
                 <br />
                 Compsci<br />
+                ├── <Link href="https://www.amd.com/content/dam/amd/en/documents/radeon-tech-docs/instruction-set-architectures/rdna3-shader-instruction-set-architecture-feb-2023_0.pdf
+" className="text-base">rdna3<br /></Link>
                 ├── <Link href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63VIBQVWguXxZZi0566y7Wf" className="text-base">mit swe<br /></Link>
                 ├── <Link href="https://www.youtube.com/playlist?list=PLF1Z-APd9zK7usPMx3LGMZEHrECUGodd3" className="text-base">haskell<br /></Link>
                 ├── <Link href="https://www.felixcloutier.com/x86/" className="text-base">x86 instruction set<br /></Link>
