@@ -1,4 +1,5 @@
 import type { MDXComponents } from 'mdx/types'
+import Divider from './components/divider'
  
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -6,6 +7,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <li>
         {"• " + children}
       </li>
+    ),
+    hr: ({children}) => (
+      <Divider />
     ),
     ...components,
   }

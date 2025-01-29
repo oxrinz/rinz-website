@@ -1,0 +1,118 @@
+import Link from 'next/link'
+
+# RV32I
+
+## Instruction types
+
+More about instruction formats can be found
+<Link className='text-base' href="https://en.wikipedia.org/wiki/RISC-V">here</Link> 
+<br />
+Funct3 and funct7 are used to extend the opcode field to specify the operation to be performed. The numbers in funct3 and funct7 indicate the length in bits
+
+### R-Type
+**Register-to-register operations**
+- Two source registers
+- Destination register
+- Funct3
+- Funct7
+
+### I-Type
+**Immediate operations**
+- Immediate value
+- Two registers
+- Funct3
+
+### S-Type
+**Store operations. From register to memory**
+- Immediate value for memory address
+- Two registers
+- Funct3
+
+### B-Type
+**Branch operations. Transfer control based on a condition**
+- Two registers
+- Immediate value for branch target address
+- Funct3
+
+### U-Type
+**Operations with 20-bit immediate values**
+- Register
+- Immediate value
+
+### J-Type
+**Unconditional branch operations, aka jumps**
+- Register
+- 20-bit immediate value
+
+---
+
+## Registers
+
+There are 32 registers in RV32I
+
+### x0
+
+Hardwired to 0, cannot be changed
+
+### x1 (ra)
+
+Return address. Used in function calls
+
+### x2 (sp)
+
+Stack pointer. Used for managing the Stack
+
+### x3 (gp)
+
+Global pointer. Used for accessing global data.
+
+### x4 (tp)
+
+Thread pointer. Used for thread storage
+
+### x5-x11 (t0-t6)
+
+Temporary registers. Used for holding intermediate values during calculations
+
+### x10-x17 (a0-a7)
+
+Argument registers. Used in function calls
+
+### x8, x9, x18-x27 (s0-s11)
+
+Saved registers. Used for preserving values across function calls
+
+### x28-x31 (t3-t6)
+
+Additional temporary registers
+
+---
+
+## Virtual memory
+
+RV32I uses 
+<Link className='text-base' href="https://medium.com/@viveksgt/understanding-risc-v-virtual-memory-part-0-0bc2ce3318cf">virtual memory</Link> 
+
+TODO: Learn virtual memory
+
+
+---
+
+## Extensions
+
+### M-Extension
+Adds support for integer multiplication and division
+
+### A-Extension
+Adds support for 
+<Link className='text-base' href="https://www.reddit.com/r/rust/comments/1fm3697/what_do_atomic_operations_accomplish/">atomic</Link>
+<Link className='text-base' href="https://dev.to/kprotty/understanding-atomics-and-memory-ordering-2mom">memory</Link> 
+<Link className='text-base' href="https://www.youtube.com/watch?v=hi-IzkqEVUg">operations</Link>. 
+Used in multi-core and multi-thread
+
+TODO: Learn extensions
+
+{/* 
+- I: Immediate operations (immediate value, 2 registers)
+- S: Store operations. From register to memory. (immediate value for memory address, 2 registers)
+- B: Conditional branch ()  */}
