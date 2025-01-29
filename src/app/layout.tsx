@@ -4,7 +4,6 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Github, Instagram, Twitter, Youtube } from "lucide-react";
-import Menu from "./menu";
 import Divider from "@/components/divider";
 const font = IBM_Plex_Mono({ subsets: ["latin"], weight: "400" });
 
