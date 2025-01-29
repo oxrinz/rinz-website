@@ -1,8 +1,12 @@
 import Link from "next/link";
 
-export default function Menu({ font }: any) {
+export default function Study({ font }: any) {
     return (
-        <div>
+        <div className="col-span-2 flex flex-col gap-8">
+            <h1>Study</h1>
+            <p>
+                Collection of things to learn, currently mostly disorganized
+            </p>
             <pre className={"whi whitespace-pre " + font}>
                 Utils<br />
                 └── <Link href="https://bits-and-wits.vercel.app/" className="text-base">bits and wits<br /></Link>
@@ -22,28 +26,6 @@ export default function Menu({ font }: any) {
                 ├── <Link href="https://www.youtube.com/playlist?list=PLF1Z-APd9zK7usPMx3LGMZEHrECUGodd3" className="text-base">haskell<br /></Link>
                 ├── <Link href="https://www.felixcloutier.com/x86/" className="text-base">x86 instruction set<br /></Link>
                 └── <Link href="https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md" className="text-base">Linux syscall table<br /></Link>
-            </pre>
-        </div>
-    )
-}
-
-export function Menu2({ font }: any) {
-    return (
-        <div>
-            <pre className={"whi whitespace-pre " + font}>
-                root<br />
-                ├── projects<br />
-                │   ├── ongoing<br />
-                │   │   ├── <Link href="sex" className="text-base">Zig x CUDA starter<br /></Link>
-                │   │   └── <Link href="sex" className="text-base">dose.exe<br /></Link>
-                │   ├── 📁 finished<br />
-                │   │   └── <Link href="sex" className="text-base">aura-wizard.exe<br /></Link>
-                │   └── 📁 unfinished/dropped<br />
-                │       ├── 📄 <Link href="sex" className="text-base">spire-ui.exe<br /></Link>
-                │       └── 📄 <Link href="sex" className="text-base">vnvault.exe<br /></Link>
-                ├── 📁 writing<br />
-                ├── 📄 <Link href="sex" className="text-base">archive.txt<br /></Link>
-                └── 📄 <Link href="sex" className="text-base">stats.txt<br /></Link>
             </pre>
         </div>
     )
