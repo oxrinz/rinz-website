@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "",
   icons: ['/pfp.png']
 };
-
+ 
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,7 +42,7 @@ export default function RootLayout({
                 <Divider />
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="w-full col-span-2">
-                  {children}
+                    {children}
                   </div>
                   <div className="flex-col gap-6 hidden md:flex">
                     <div className="flex gap-2 *:stroke-rose-500">

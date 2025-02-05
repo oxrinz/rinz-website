@@ -1,13 +1,10 @@
-import Link from "next/link";
-
 export const metadata = {
-    parentLayoutPath: '../layout'
-  }
+    title: 'Sumika',
+    description: 'Independent Layout',
+};
 
-export default function Archive({ children }: any) {
-    return (
-        <div>
-            {children}
-        </div>
-    )
+export const dynamic = 'force-static';
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+    return <html><body style={{ margin: "0" }}>{children}</body></html>;
 }
